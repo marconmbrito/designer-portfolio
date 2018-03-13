@@ -1,0 +1,36 @@
+@import "_reset"
+@import "_variables"
+
+//GENERAL STYLES
+*
+  box-sizing: border-box
+body
+  font-size: 1em
+  background: $light
+  font-family: $body-font
+  color: $dark
+  overflow-x: hidden
+a
+  text-decoration: none
+  color: inherit
+
+//END GENERAL STYLES
+
+
+
+//ANIMATIONS
+//keyframes
+@-webkit-keyframes bg-color
+  0%
+    border-color: $light
+  50%
+    border-color: transparent
+  100%
+    border-color: $light
+
+@-webkit-keyframes spin
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
+//end animations

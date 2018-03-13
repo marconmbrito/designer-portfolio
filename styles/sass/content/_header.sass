@@ -1,0 +1,79 @@
+//header
+header
+  height: 100vh
+  background: linear-gradient(to bottom, #000 -100%, transparent), linear-gradient(0deg, #000 -100%, transparent), url('../../images/bg-header.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-attachment: fixed
+  color: $light
+  +flex(column, center, center)
+  text-transform: $upper
+  font-family: $heading-font
+
+  @media ($medium-screen)
+    +flex(column, flex-start, center)
+
+  h1
+    font-size: 2.6em
+    font-weight: 700
+    letter-spacing: -3pt
+    padding: 0 .25em
+    text-align: left
+    opacity: 0
+    transition: all .5s
+    margin: 0
+    @media ($small-screen)
+      font-size: 3.5em
+    @media ($medium-screen)
+      letter-spacing: $heading-space
+      font-size: 5em
+      padding-left: .2em
+    @media ($large-screen)
+      font-size: 6em
+
+    .dot
+      color: $cta-color
+      padding-left: .1em
+    span
+      opacity: 0
+      transition: all .5s
+
+  p
+    font-family: $body-font
+    font-size: .9em
+    width: 100%
+    text-align: center
+    padding: 0 1em
+    text-transform: initial
+    max-width: 46em
+    line-height: $line-height
+    opacity: 0
+    transition: all .5s
+    margin: 0
+
+    @media ($medium-screen)
+      text-align: left
+      width: 70%
+      padding-left: 1.5em
+      font-size: 1em
+
+  .cta
+    font-size: 1.3em
+    padding: 12px 20px
+    border: 1px solid $light
+    color: $cta-color
+    position: absolute
+    align-self: center
+    cursor: pointer
+    font-weight: bold
+    animation: bg-color 3s ease-in infinite
+    z-index: 10
+    bottom: -1em
+    &:hover
+      animation: none
+      background: $cta-color
+      color: $light
+      border: none
+
+//end of header

@@ -1,0 +1,57 @@
+//section - skills
+.skills
+  +flex(row, space-between, center)
+  flex-wrap: wrap
+  background: $dark
+  color: $light
+  min-height: 100vh
+  &:after
+    content: ""
+    position: relative
+    bottom: -5em
+    width: 100%
+    height: 30vh
+    background: $light
+    -webkit-clip-path: polygon(0 100%, 0% 0%, 100% 55%, 100% 100%)
+    clip-path: polygon(0 100%, 0% 0%, 100% 55%, 100% 100%)
+    @media ($large-screen)
+      bottom: -8em
+
+  .box
+    width: 100%
+    max-width: 24em
+    line-height: $line-height
+    +flex(column, center, center)
+    text-align: center
+    margin: $inner-margin 0
+    &:last-of-type
+      margin-bottom: $space-sections
+
+    h2
+      font-size: 2.5em
+      font-weight: 600
+      margin: 0 0 .2em -.2em
+      font-family: $heading-font
+      i
+        color: $secondary
+
+    p
+      font-size: 1em
+      padding: 0 1em
+      text-align: left
+
+    .skills-cta
+      align-self: center
+      border: 1px solid $light
+      padding: .7em 1em
+      text-transform: uppercase
+      margin-top: 3em
+      color: $cta-color
+      font-family: $heading-font
+      &:hover
+        background: $cta-color
+        color: $light
+        border: 1px solid $cta-color
+        cursor: pointer
+
+//end of section - skills

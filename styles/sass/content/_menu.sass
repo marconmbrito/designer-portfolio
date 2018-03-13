@@ -1,0 +1,90 @@
+//menu
+nav
+  text-transform: uppercase
+  color: $light
+  width: 100%
+  height: 0
+  z-index: 100
+  position: fixed
+  transition: all .2s ease-out
+  li
+    font-size: .9em
+
+  .logo
+    position: fixed
+    left: 10px
+    top: 10px
+    font-size: 2.3em
+    font-weight: 700
+    letter-spacing: -10px
+    color: $cta-color
+    font-family: $heading-font
+    cursor: pointer
+    transition: all .2s ease-out
+    @media ($medium-screen)
+      left: 30px
+
+  .menu
+    font-size: 2.3em
+    position: fixed
+    right: 20px
+    top: 10px
+    @media ($medium-screen)
+      display: none
+
+  ul
+    position: absolute
+    right: 30px
+    top: 15px
+    font-size: 1.2em
+    font-weight: 700
+    font-family: $heading-font
+    display: none
+    li
+      padding: 0 5px
+      cursor: pointer
+    @media ($medium-screen)
+      +flex(row, center, center)
+
+
+//add class on scroll
+.nav-scroll
+  background: $dark
+  height: 8vh
+
+  .logo
+    font-size: 2em
+
+//NAV BAR [sidenav]
+.navbar
+  +flex(column, center, space-evenly)
+  position: fixed
+  width: 100%
+  height: 100vh
+  background: $dark
+  right: -100%
+  z-index: 99
+  transition: all .3s ease-out
+  font-family: $heading-font
+  text-align: center
+  li
+    padding: .5em 0
+    color: $light
+    font-size: 1.5em
+    text-transform: $upper
+    font-weight: 700
+    cursor: pointer
+
+  ul:last-of-type
+    +flex(row, center, space-around)
+    fontem
+    position: absolute
+    bottom: 20px
+
+    li
+      padding: .5em
+      color: $cta-color
+
+.is-open
+  right: 0
+//end nav

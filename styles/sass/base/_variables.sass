@@ -1,0 +1,36 @@
+//VARIABLES
+//colors
+$dark: #08090A
+$light: #F2F9FF
+$primary: #7AE7C7
+$secondary: #5CE0F2
+$cta-color: #FE5F55
+
+//fonts
+$heading-font: 'Merriweather Sans', sans-serif
+$body-font: 'Open Sans', sans-serif
+$upper: uppercase
+$lower: lowercase
+$heading-space: -5pt
+//END OF VARIABLES
+
+//MIXINS
+@mixin flex($direction, $position-vertical, $position-horizontal)
+  display: flex
+  flex-direction: $direction
+  justify-content: $position-horizontal
+  align-items: $position-vertical
+//END MIXINS
+
+//MEDIA QUERIES
+$small-screen: 'min-width: 29em'
+$medium-screen: 'min-width: 40em'
+$large-screen: 'min-width: 60em'
+//END MEDIA QUERIES
+
+//SPACING
+$space-sections: 3em
+$padding-sections: .7em
+$inner-margin: 2em
+$line-height: 1.2
+//END SPACING
